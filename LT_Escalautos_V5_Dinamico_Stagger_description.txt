@@ -1,0 +1,24 @@
+Resumen:
+Crea en After Effects una composición tipo "lower third" (1920x1080) con un estilo geométrico e entradas escalonadas (staggered animation).
+
+Pasos principales:
+- Crea una nueva composición llamada "LT_Escalautos_V5_Estilo_TV".
+- Importa un archivo de logo desde la ruta especificada; muestra alerta si falta.
+- Define colores corporativos usados para las formas y textos.
+- Función helper createSkewedRect: genera capas de forma inclinadas (rectángulos con skew), relleno y sombra.
+- Agrega capas geométricas: cinta morada de acento, placa base azul oscuro y caja blanca para el logo.
+- Inserta y escala el logo para ajustarlo dentro de la caja.
+- Crea tres capas de texto (título, dirección, web/redes) con fuentes, tamaños y colores.
+- Aplica expresiones a las propiedades para animaciones dinámicas:
+  - applySlideLeft: entrada desde la izquierda con oscilación amortiguada (posición).
+  - applyPopScale: "pop" de escala con decaimiento oscilatorio (escala).
+  - applyTextReveal: entrada desde abajo con easing y control de opacidad.
+- Orquesta un stagger (retrasos): cada elemento recibe un pequeño delay (0.00, 0.15, 0.30, 0.45, 0.55, 0.65, 0.75 s) para la coreografía escalonada.
+- Abre la composición en el visualizador y agrupa la operación en un undo group.
+
+Efecto visual resultante:
+Una lower-third con formas inclinadas y sombra, logo que aparece con efecto "pop", y textos que aparecen uno por uno desde abajo, todo con movimiento amortiguado y entradas escalonadas.
+
+Notas:
+- Ruta del logo usada en el script: C:/Users/janus/Downloads/comerciales city tv escalautos/COMERCIAL/logo escalautos.png
+- Si quieres que modifique colores, textos o delays, dime qué cambiar.
